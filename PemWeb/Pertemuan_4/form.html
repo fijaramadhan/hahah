@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Latihan Form html</title>
+	</head>
+	<body>
+		<h1>Latihan Form html</h1>
+		<form name="fmhs" action="proses.php" method="post">
+			<table width="50%">
+				<tr>
+					<td>Nim</td>
+					<td><input type="number" name="fnim" required></td>
+				</tr>
+				<tr>
+					<td>Nama</td>
+					<td><input type="text" name="fnama" required></td>
+				</tr>
+				<tr>
+					<td>Program Studi</td>
+					<td>
+					<select name="fprodi" required>
+						<option value="">Pilih</option>
+						<option value="a11">S1-Teknik Informatika</option>
+						<option value="a12">S1-Sistem Informasi</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Tanggal Lahir</td>
+					<td><input type="date"></td>
+				</tr>
+				<tr>
+					<td>Bidang Minat</td>
+					<td>
+						<input type="checkbox" id="minat1" name="fminat1" value="WebDev">
+						<label for="minat1">Web Developer</label><td>
+						<input type="checkbox" id="minat2" name="fminat2" value="MobDev">
+						<label for="minat2">Mobile Developer</label><td>
+						<input type="checkbox" id="minat3" name="fminat3" value="DataSc">
+						<label for="monat3">Data Science</label><td>
+					</td>
+				<tr>
+					<td>Lampiran Sertifikat</td>
+					<td><input type="file" name="fsertif" required></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="fsubmit" value="kirim"><input type="reset"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
